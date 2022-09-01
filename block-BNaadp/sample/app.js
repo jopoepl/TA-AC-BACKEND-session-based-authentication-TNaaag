@@ -19,6 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//handling cookies
+app.use((req, res, next) => {
+  res.cookie("Name", "Joel")
+  next()
+})
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
