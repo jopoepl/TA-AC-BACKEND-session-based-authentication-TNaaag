@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 class="center">Welcome to the Registration Page</h1>
+    <form action="/users/register" method="post" class="column padding">
+      <label for="name">Name
+        <input  class="margin" type="text" name="name" placeholder="Name">
+      </label>
+    <label for="email">Email
+        <input class="margin" type="email" name="email" placeholder="Email">
+    </label>
+    <label for="password">Password
+        <input class="margin" type="password" name="password" placeholder="Password">
+    </label>
+    <label for="age">Age
+        <input class="margin" type="number" name="age" placeholder="Age">
+    </label>
+    <label for="phone">Phone
+        <input class="margin" type="number" name="phone" placeholder="Phone">
+    </label>
+    <label for="btn">
+        <button class="btn" type="submit">Register</button>
+    </label>
+    </form>
+  </body>
+</html>
