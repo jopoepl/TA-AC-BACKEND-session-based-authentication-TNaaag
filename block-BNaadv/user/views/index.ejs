@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include(`./partials/header`) %>
+    <div class="center column">
+      <%if (success) { %>
+        <p><%= success %></p>
+      <% } %>
+    <h1>USER PAGE</h1>
+    <p>Welcome to USER Page</p>
+  </div>
+  </body>
+</html>
