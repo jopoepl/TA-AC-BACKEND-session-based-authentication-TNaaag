@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SIGNUP</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include(`./partials/header`) %>
+    <h1 class="center padding">Welcome to the Signup Page</h1>
+    <div class="form-cont center">
+        <form class="form-cont column" action="/users/register" method="post">
+          <% if(error) { %>
+            <p><%= error %></p>
+          <% } %>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button class="btn">Sign Up</button>
+        </form>
+    </div>
+  </body>
+</html>
