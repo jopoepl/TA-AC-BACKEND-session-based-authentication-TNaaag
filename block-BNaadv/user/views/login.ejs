@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include(`./partials/header`) %>
+    <h1 class=" center padding">Welcome to the Login Page</h1>
+    <div class="form-cont center padding">
+        <form  class="form-cont column" action="/users/login" method="post">
+          <%if (error) { %>
+            <p><%= error %></p>
+          <% } %>
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button class="btn">LOGIN</button>
+        </form>
+    </div>
+  </body>
+</html>
