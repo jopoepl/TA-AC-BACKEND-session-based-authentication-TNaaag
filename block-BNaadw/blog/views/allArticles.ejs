@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOGGED IN SUCCESSFULLY </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to your Article Page: <span class="dynamic"><%= name %></span></h1>
+    <button class="btn"><a href="/users/logout">LOGOUT</a></button>
+    <button class="btn"><a href="/articles/add">ADD NEW</a></button>
+   <% articles.forEach(article => { %>
+    <div class="padding">
+      <h2><%= article.title %></h2>
+      <p><%= article.description %></p> 
+      <div>
+       <button><a href="/articles/<%= article.slug%>">VIEW</a></button>
+    </div>
+    <%})%>
+    
+  </body>
+</html>
