@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title >Add New Product</title>
+    <link rel='stylesheet' href='../output.css'>
+  </head>
+  <body>
+    <button class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 p-12 m-4 absolute left-2 top-4"> <a href="/">HOME</a></button> </body>
+
+    <h1 class="font-serif text-4xl text-center p-16">Create A New Product</h1>
+    <div class="flex justify-center">
+        <form class="p-6 divide-solid border-2 border-grey-400 flex flex-col w-96" action="/product/add" method="POST">
+            <label class="w-full my-3" for="name">Name
+                <input class="my-2 w-full p-1 divide-solid border-2 border-grey-200" type="text" placeholder="Name" name="name">
+            </label>
+            <label class="w-full my-3" for="lname">Quantity
+                <input class="my-2 w-full p-1 divide-solid border-2 border-grey-200 " type="number" placeholder="Quantity" name="quantity">
+            </label>
+            <label class="w-full my-3" for="email">Price
+                <input class="my-2 w-full p-1 divide-solid border-2 border-grey-200 " type="number" placeholder="Price" name="price">
+            </label>
+            <label class="w-full my-3" for="password">Image
+                <input class="my-2 w-full p-1 divide-solid border-2 border-grey-200 " type="url" placeholder="Add Image URL" name="image">
+            </label>
+            <button class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 p-12 m-4">Add Product</button>
+        </form>
+    </div>
+
+  </body>
+</html>
